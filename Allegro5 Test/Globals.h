@@ -1,0 +1,12 @@
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
+enum ID { PLAYERWHITE, PLAYERBLACK, ENEMY, SAW, BULLET, BORDER, MISC, FLOOR, GOAL };
+enum STATE{ TITLE, PLAYING, LOST };
+enum KEYS{ UP, DOWN, LEFT, RIGHT, W, A, S, D, R, SPACE };
+enum COLLIDE_TYPE{ WHITE, BLACK, GREY };
+
+static int WIDTH = 512;
+static int HEIGHT = 512;
+
+#endif

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="negative space" tilewidth="64" tileheight="64">
+  <image source="../Environment/Tiles/BlackWhiteTiles.png" width="192" height="64"/>
+ </tileset>
+ <tileset firstgid="4" name="empty" tilewidth="64" tileheight="64">
+  <image source="../Environment/Tiles/BlackWhiteTilesand blank.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="8" name="spawn/goal" tilewidth="64" tileheight="64">
+  <image source="../Environment/Tiles/level tilesets/spawngoal.png" width="256" height="64"/>
+ </tileset>
+ <layer name="white" width="20" height="10">
+  <data encoding="csv">
+2,2,2,2,2,2,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+2,7,7,7,7,7,2,2,2,2,2,2,2,2,2,2,2,2,2,7,
+2,7,2,2,2,2,7,7,7,7,7,7,7,7,7,7,7,7,2,7,
+2,7,2,2,2,2,7,7,7,7,7,7,7,7,7,7,7,7,2,7,
+2,7,2,2,2,2,7,7,7,7,2,2,2,2,7,7,7,7,2,7,
+7,2,7,7,7,7,7,7,2,5,7,7,7,7,2,2,2,2,7,2,
+7,2,7,7,7,7,7,2,5,7,7,7,7,7,2,2,2,2,7,2,
+7,2,7,7,7,7,2,5,7,7,7,7,7,7,2,2,2,2,7,2,
+7,2,2,2,2,2,2,2,2,2,2,2,2,2,7,7,7,7,7,2,
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,2,2,2,2,2,2
+</data>
+ </layer>
+ <layer name="black " width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+0,1,0,0,0,0,0,0,0,0,0,7,7,7,1,1,1,1,0,1,
+0,1,0,0,0,0,0,0,0,0,0,7,7,7,1,1,1,1,0,1,
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,
+1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,
+1,0,1,1,1,1,0,0,7,1,4,4,0,0,0,0,0,0,1,0,
+1,0,1,1,1,1,0,0,7,7,7,7,0,1,0,0,0,0,1,0,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="grey" width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,6,6,6,6,6,6,6,6,0,0,0,0,0,0,
+0,0,0,0,0,0,6,6,6,6,6,6,6,6,0,0,0,0,0,0,
+0,0,0,0,0,0,6,6,6,6,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,6,0,0,6,6,6,6,6,0,0,0,0,0,0,
+0,0,0,0,0,0,6,0,6,0,7,7,6,6,0,0,0,0,0,0,
+0,0,0,0,0,0,0,6,6,6,6,6,6,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="greyob" width="20" height="10" visible="0">
+  <properties>
+   <property name="colour" value="2"/>
+  </properties>
+  <object x="384" y="128" width="512" height="128"/>
+  <object x="384" y="256" width="256" height="64"/>
+  <object x="576" y="320" width="320" height="64"/>
+  <object x="768" y="384" width="128" height="64"/>
+  <object x="384" y="320" width="64" height="128"/>
+  <object x="512" y="384" width="64" height="64"/>
+  <object x="448" y="448" width="384" height="64"/>
+ </objectgroup>
+ <objectgroup name="blackob" width="20" height="10" visible="0">
+  <properties>
+   <property name="colour" value="1"/>
+  </properties>
+  <object x="384" y="0" width="896" height="64"/>
+  <object x="1216" y="64" width="64" height="256"/>
+  <object x="896" y="128" width="256" height="192"/>
+  <object x="1152" y="320" width="64" height="192"/>
+  <object x="896" y="512" width="320" height="64"/>
+  <object x="0" y="576" width="896" height="64"/>
+  <object x="0" y="320" width="64" height="256"/>
+  <object x="64" y="64" width="320" height="64"/>
+  <object x="64" y="128" width="64" height="192"/>
+  <object x="128" y="320" width="256" height="192"/>
+  <object x="448" y="320" width="64" height="64"/>
+  <object x="576" y="384" width="192" height="64"/>
+  <object x="832" y="448" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="whiteob" width="20" height="10" visible="0">
+  <properties>
+   <property name="colour" value="0"/>
+  </properties>
+  <object x="384" y="64" width="832" height="64"/>
+  <object x="1152" y="128" width="64" height="192"/>
+  <object x="1216" y="320" width="64" height="256"/>
+  <object x="896" y="576" width="384" height="64"/>
+  <object x="896" y="320" width="256" height="192"/>
+  <object x="640" y="256" width="256" height="64"/>
+  <object x="64" y="512" width="832" height="64"/>
+  <object x="128" y="128" width="256" height="192"/>
+  <object x="0" y="0" width="384" height="64"/>
+  <object x="0" y="64" width="64" height="256"/>
+  <object x="64" y="320" width="64" height="192"/>
+  <object x="384" y="448" width="128" height="64"/>
+  <object x="448" y="384" width="128" height="64"/>
+  <object x="512" y="320" width="128" height="64"/>
+ </objectgroup>
+ <objectgroup name="whitespawn" width="20" height="10">
+  <object x="192" y="448" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="blackspawn" width="20" height="10">
+  <object x="192" y="256" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="whitegoal" width="20" height="10">
+  <object x="1024" y="256" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="blackgoal" width="20" height="10">
+  <object x="1024" y="448" width="64" height="64"/>
+ </objectgroup>
+ <layer name="trial" width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

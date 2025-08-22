@@ -1,5 +1,5 @@
 #pragma once
-#include "playerwhite.h"
+#include "PlayerWhite.h"
 class PlayerBlack :
 	public PlayerWhite
 {

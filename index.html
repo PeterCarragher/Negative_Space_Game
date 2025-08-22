@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negative Space Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            border: 2px solid #666;
+            background-color: #000;
+        }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            z-index: 100;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div id="fps">FPS: 0</div>
+            <div id="instructions">
+                WASD: Move characters | R: Reset | ESC: Exit
+            </div>
+        </div>
+    </div>
+
+    <script src="https://pixijs.download/release/pixi.min.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/gameObject.js"></script>
+    <script src="js/floor.js"></script>
+    <script src="js/blackFloor.js"></script>
+    <script src="js/greyFloor.js"></script>
+    <script src="js/playerWhite.js"></script>
+    <script src="js/playerBlack.js"></script>
+    <script src="js/goal.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/saw.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/tmxLoader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
